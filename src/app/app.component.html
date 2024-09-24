@@ -1,0 +1,14 @@
+<div class="box">
+  <h2>User Registration</h2>
+  Name: <input type="text" [(ngModel)]="name"/><br>
+  Email: <input type="email" [(ngModel)]="email"/><br>
+  Phone: <input type="number" [(ngModel)]="phone"/><br>
+  <input type="button" value="Submit" (click)="updateDetails()"/>
+</div>
+
+<div class="box" *ngIf="submitted">
+  <h2>User Details </h2>
+  Name: {{name}} <br>
+  Email: {{email}} <br>
+  Phone: {{phone}} <br>
+</div>
